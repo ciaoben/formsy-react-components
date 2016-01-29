@@ -20,7 +20,7 @@ var Playground = React.createClass({
     getInitialState: function() {
         return {
             layout: 'horizontal',
-            validatePristine: false,
+            validatePristinree: false,
             disabled: false
         };
     },
@@ -118,7 +118,8 @@ var Playground = React.createClass({
                             autoComplete="off"
                             placeholder="This is an email input."
                             help="This email field should not autocomplete."
-                            required="isEmail"
+                            validations="isEmail"
+                            required
                         />
                         <Input
                             {...sharedProps}
